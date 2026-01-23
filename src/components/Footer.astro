@@ -1,0 +1,17 @@
+---
+import Social from "./Social.astro";
+const username = "geowarin";
+---
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <Social platform={"github.com"} username={username}/>
+    <Social platform={"bsky.app"} username={username}/>
+</footer>
