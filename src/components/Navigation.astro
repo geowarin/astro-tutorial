@@ -1,10 +1,14 @@
 ---
 import Menu from "./Menu.astro";
+import ThemeIcon from "./ThemeIcon.astro";
 
 ---
 <header>
     <nav>
-        <Menu />
+        <div class="menu-nav">
+            <Menu />
+            <ThemeIcon />
+        </div>
         <div id="main-menu" class="nav-links">
             <a href="/">Home</a>
             <a href="/about/">About</a>
@@ -13,3 +17,10 @@ import Menu from "./Menu.astro";
         </div>
     </nav>
 </header>
+
+<style>
+    .menu-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
