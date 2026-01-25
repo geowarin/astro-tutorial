@@ -1,13 +1,16 @@
 ---
-import Greeting from '../components/Greeting.tsx';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from "../components/Greeting.tsx";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-    <h2>My awesome blog subtitle</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur distinctio eaque esse perferendis
-        sequi, tenetur! Accusantium beatae, corporis, doloribus molestiae optio qui, quisquam repellat repudiandae sit
-        temporibus vero!</p>
-    
-    <Greeting client:load messages={['Hello', 'Hi', 'Hey', 'Greetings', 'Salutations']} />
+  <h2>My awesome blog subtitle</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aspernatur distinctio eaque
+    esse perferendis sequi, tenetur! Accusantium beatae, corporis, doloribus molestiae optio qui,
+    quisquam repellat repudiandae sit temporibus vero!
+  </p>
+
+  <Greeting client:load messages={["Hello", "Hi", "Hey", "Greetings", "Salutations"]} />
 </BaseLayout>
